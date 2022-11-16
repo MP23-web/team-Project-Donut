@@ -1,2 +1,19 @@
-@import './common';
-@import './example';
+@import './base/normalize';
+@import './base/reset';
+
+@import './utils/breakpoints';
+@import './utils/comon';
+@import './utils/variables';
+
+
+
+@import './components/about_us.scss';
+@import './components/contact.scss';
+@import './components/footer.scss';
+@import './components/header.scss';
+@import './components/hero.scss';
+@import './components/price.scss';
+@import './components/program.scss';
+@import './components/registration.scss';
+@import './components/reviews.scss';
+@import './components/speakers.scss';
