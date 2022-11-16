@@ -1,4 +1,5 @@
 .section-program {
+  padding-top: 28px;
 }
 
 .container__program {
@@ -8,6 +9,11 @@
 }
 
 .section-header {
+}
+
+.couple-lists {
+  display: flex;
+  justify-content: space-between;
 }
 
 .program-list {
