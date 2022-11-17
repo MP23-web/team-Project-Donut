@@ -26,13 +26,13 @@
 }
 
 .container__program {
-  @media screen and ($mob) {
+  @media screen and (width: $mob) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  @media screen and ($tabl) {
+  @media screen and (width: $tabl) {
     display: flex;
 
     flex-direction: row;
@@ -40,7 +40,7 @@
     align-items: center;
   }
 
-  @media screen and ($desc) {
+  @media screen and (width: $desc) {
     display: flex;
 
     flex-direction: row;
@@ -50,11 +50,11 @@
 }
 
 .program-list {
-  @media screen and ($tabl) {
-    max: width 380px;
+  @media screen and (width: $tabl) {
+    max-width: 380px;
   }
-  @media screen and ($desc) {
-    max: width 380px;
+  @media screen and (width: $desc) {
+    max-width: 380px;
   }
 }
 
