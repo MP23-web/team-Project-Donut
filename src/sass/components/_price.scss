@@ -45,6 +45,7 @@
     width: 280px;
 
     background: #fafbfb;
+    background-size: 240px;
     background-image: url('../img/price/colorful-and-tasty-donuts-mobile.png');
     background-repeat: no-repeat;
 
@@ -54,6 +55,10 @@
       justify-content: space-between;
 
       width: 225px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 395px;
+      background-size: 300px;
     }
   }
   &__item:nth-child(2) {
