@@ -11,24 +11,14 @@
 }
 
 .container-about {
-   max-width: 280px;
    height: 100%;
 
    @media screen and (min-width: $tabl) {
-      max-width: 704px;
-      display: flex;
-   }
-
-   @media screen and (min-width: $desc) {
-      max-width: 1248px;
       display: flex;
    }
 }
 
 .img-wrapper {
-   display: block;
-   max-width: 100%;
-   height: auto;
    margin-bottom: 28px;
 
    @media screen and (min-width: $tabl) {
@@ -37,13 +27,7 @@
    }
 
    @media screen and (min-width: $desc) {
-      max-width: 608px;
-   }
-}
-
-.about-wrapper {
-   @media screen and (min-width: $desc) {
-      display: none;
+      // max-width: 608px;
    }
 }
 
@@ -58,69 +42,73 @@
    margin-bottom: 8px;
 
    @media screen and (min-width: $tabl) {
-      font-weight: 500;
+      text-align: start;
       font-size: 32px;
       line-height: 1.22;
       margin-bottom: 28px;
    }
 }
 
-.about-wrapper__text, .more__text {
-   color: var(--bs-brown);
+.about-wrapper__text, 
+.about-wrapper__add,
+.about-wrapper__text--more {
    font-size: 16px;
    line-height: 1.25;
-   text-align: justify;
-}
+   color: var(--bs-brown);
 
-.about-wrapper__input {
-   display: none;
-
-   &:checked ~ .more {
-      display: block;
+   @media screen and (min-width: $desc) {
+      font-size: 18px;
+      line-height: 1.22;
    }
 }
 
-.more {
-   display: none;
+.about-wrapper__add {
+   margin-top: 15px;
+   margin-bottom: 15px;
 }
 
-.about-wrapper__label {
-   display: inline-block;
+.about-wrapper__text--more {
+   @media screen and (max-width: $pre-desc) {
+      opacity: 0;
+      font-size: 0;
+      transition: opacity 250ms cubic-bezier(0.165, 0.84, 0.44, 1), 
+      font-size 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+   }
+}
+
+.is-open {
+   @media screen and (max-width: $pre-desc) {
+      font-size: 16px;
+      opacity: 1;
+      transition: opacity 250ms cubic-bezier(0.165, 0.84, 0.44, 1), 
+      font-size 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+   }
+}
+
+.read-more-btn {
+   @media screen and (max-width: $pre-desc) {
+      display: block;
+   align-items: flex-start;
+   padding: 0;
+   margin-top: 16px;
+   outline: none;
+   border: none;
+   background-color: inherit;
 
    font-weight: 500;
    font-size: 16px;
    line-height: 1.25;
    color: var(--bs-brown);
+   cursor: pointer;
 
-   margin-top: 16px;
-
-   @media screen and (min-width: $tabl) {
-      margin-top: 28px;
-   }
-}
-
-.about-wrapper__input:checked ~ .about-wrapper__label {
-   visibility: hidden;
-}
-
-.about-wrapper__input:checked ~ .about-wrapper__label::after {
-   content: "Less";
-   display: block;
-   visibility: visible;
-}
-
-.about-desk {
-   display: none;
-   @media screen and (min-width: $desc) {
-      max-width: 608px;
-      display: block;
-      text-align: start;
-      font-size: 18px;
-      line-height: 1.22;
-      color: var(--bs-brown);
-      
-      .about-desk__title {
-         text-align: start;
+      &:hover,
+      &:focus {
+         color: rgba(60, 50, 45, 0.8);
       }
    }
+
+   @media screen and (min-width: $desc) {
+      display: none;
+   }
 }
+
