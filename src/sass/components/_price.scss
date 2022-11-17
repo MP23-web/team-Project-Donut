@@ -1,0 +1,94 @@
+.price-title {
+  margin-bottom: 27px;
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: #2e2520;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 31px;
+
+    font-weight: 500;
+    font-size: 32px;
+  }
+}
+
+.price-card {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 14px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+
+    color: #2e2520;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 18px;
+    margin-bottom: 20px;
+
+    width: 280px;
+
+    background: #fafbfb;
+    background-image: url('../img/price/colorful-and-tasty-donuts-mobile.png');
+    background-repeat: no-repeat;
+
+    box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+    border-radius: 25px;
+    @media screen and (min-width: 768px) {
+      justify-content: space-between;
+
+      width: 225px;
+    }
+  }
+  &__item:nth-child(2) {
+    border: 1px solid #f3848c;
+  }
+}
+
+.price-list {
+  &__item {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  &__svg {
+    margin-right: 8px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+
+    color: #2e2520;
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.price-card__button {
+  margin-top: 32px;
+  width: 145px;
+  height: 40px;
+  color: #ffffff;
+  background: #f3848c;
+  border-radius: 25px;
+  border: transparent;
+}
