@@ -1,0 +1,99 @@
+li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul,
+  li {
+    list-style-type: none;
+  }
+  
+  .registration__title {
+      margin-bottom: 28px;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #2e2520;
+  }
+  .registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/src/img/registration-mobile/topping-on-strawberry-donuts-mobile.jpg) no-repeat center/cover;
+    width: 1034px;
+    height: 234px;
+  }
+  .registration__input {
+    background-color: inherit;
+    border: 1px solid #2E2520;
+    
+    margin-top: 14px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .registration__data{
+      display: flex;
+      margin-right: 28px;
+      margin-bottom: 0;
+      margin-top: 0;
+      justify-content: end;
+      font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+  
+  /* Основной текст */
+  
+  color: #3C322D;
+  }
+  .registration__right {
+      position: relative;
+      display: block;
+      padding-left: 28px;
+  
+  }
+  .registration__right::before {
+     
+       content: " ";
+      position: absolute;
+      left: 0;
+     
+      width: 1px;
+      height: 100%;
+      background: #2E2520;
+  
+  
+  }
+  .registration__blank{
+      margin: 0;
+      font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  
+  /* Основной текст */
+  
+  color: #3C322D;
+  
+  }
+  .form{
+      margin-top: 10px;
+  }
+  .registration__button{
+      display: flex;
+  }
+  .registration__btn {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    background: #f3848c;
+    border-radius: 25px;
+    width: 145px;
+    height: 40px;
+    filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+  }
