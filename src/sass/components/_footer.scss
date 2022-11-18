@@ -3,7 +3,7 @@
 }
 
 .container-footer {
-   background-color: aqua;
+   background-color: rgba(229, 226, 227, 1);
    background-image: url(../img/footer/decor-footer-2.png);
    background-repeat: no-repeat;
    background-position: 70px 20px;
@@ -21,6 +21,10 @@
    display: flex;
    .social-list__item:not(:last-child) {
       margin-right: 16px;
+   }
+
+   @media screen and (min-width: $tabl) {
+      margin-bottom: 80px;
    }
 
    @media screen and (min-width: $desc) {
