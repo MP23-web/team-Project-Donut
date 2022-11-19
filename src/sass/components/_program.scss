@@ -4,9 +4,18 @@
   max-height: 100%;
 } */
 .section-program {
-  padding-top: 28px;
 
   background-color: #f6f7f7;
+
+  @media screen and (min-width: $mob) {
+    padding-bottom: 35px; 
+  }
+  @media screen and (min-width: $tabl) {
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: $desc) {
+    padding-bottom: 0;
+  }
 }
 
 .container__program {

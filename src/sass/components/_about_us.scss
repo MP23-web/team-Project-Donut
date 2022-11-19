@@ -1,14 +1,16 @@
 .section-about {
    background-color: rgba(229, 226, 227, 1);
-   padding-top: 20px;
+   
 
-   @media screen and (min-width: $tabl) {
-      padding-top: 36px;
-   }
-
-   @media screen and (min-width: $desc) {
-      padding-top: 64px;
-   }
+   @media screen and (min-width: $mob) {
+      padding-bottom: 18px; 
+    }
+    @media screen and (min-width: $tabl) {
+      padding-bottom: 29px;
+    }
+    @media screen and (min-width: $desc) {
+      padding-bottom: 0;
+    }
 }
 
 .container-about {

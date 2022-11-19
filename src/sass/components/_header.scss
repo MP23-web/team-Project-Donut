@@ -64,6 +64,18 @@
       align-items: baseline;
     }
   }
+
+header {
+  @media screen and (min-width: $mob) {
+  padding-bottom: 20px; 
+}
+@media screen and (min-width: $tabl) {
+  padding-bottom: 36px;
+}
+@media screen and (min-width: $desc) {
+  padding-bottom: 64px;
+}}
+  
   
   .menu-button {
     display: none;

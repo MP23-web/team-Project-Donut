@@ -2,26 +2,26 @@
   background-color: #f6f7f7;
 
   @media screen and (min-width: $mob) {
-    padding-top: 35px;
+    padding-bottom: 33px; 
   }
   @media screen and (min-width: $tabl) {
-    padding-top: 20px;
-  }
-  @media screen and (min-width: $mob) {
-    padding-top: 0;
-  }
-}
-
-.section-header__speakers {
-  margin-top: 35px;
-
-  @media screen and (min-width: $tabl) {
-    margin-top: 24px;
+    padding-bottom: 77px;
   }
   @media screen and (min-width: $desc) {
-    margin-top: 100px;
+    padding-bottom: 101px;
   }
 }
+
+// .section-header__speakers {
+//   margin-top: 35px;
+
+//   @media screen and (min-width: $tabl) {
+//     margin-top: 24px;
+//   }
+//   @media screen and (min-width: $desc) {
+//     margin-top: 100px;
+//   }
+// }
 
 .container__speakers {
   display: flex;
