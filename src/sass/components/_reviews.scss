@@ -1,35 +1,114 @@
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+.section-reviews {
+  // background: linear-gradient(
+  //   180.11deg,
+  //   #e5e2e3 10.73%,
+  //   #fdfefe 38.02%,
+  //   #e5e2e3 71.11%,
+  //   #fdfefe 99.91%
+  // );
+
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    height: 720px;
+    padding-bottom: 80px;
+  }
 }
 
 .reviews-title {
   text-align: center;
 
-  margin-bottom: 22px;
+  margin-bottom: 27px;
 
   font-weight: 600;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.2;
   text-align: center;
 
-  color: #2e2520;
+  color: var(--bs-dark-grey);
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 32px;
+  }
 }
 
 .photo-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  &__item:nth-child(even) {
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 80px;
+      left: 8px;
+    }
+    @media screen and (min-width: 1280px) {
+      position: absolute;
+      top: 130px;
+      left: 190px;
+    }
+  }
+  &__item:nth-child(odd) {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &__picture {
+    margin-bottom: 8px;
+  }
+  &__main-img {
+    width: 280px;
+    @media screen and (min-width: 768px) {
+      width: 336px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 394px;
+    }
+  }
+  &__img {
+    width: 152px;
+    @media screen and (min-width: 1280px) {
+      width: 285px;
+    }
+  }
+  &__svg {
+    margin-bottom: 8px;
+  }
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--bs-dark);
+  }
   &__text {
-    width: 285px;
+    width: 280px;
+    text-align: center;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--bs-dark-grey);
+    @media screen and (min-width: 768px) {
+      width: unset;
+      margin-bottom: 22px;
+    }
+  }
+  &__row {
+    display: block;
     text-align: center;
   }
   &__pagination {
     position: relative;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
 
@@ -39,6 +118,8 @@
   }
   &__pagination::before {
     content: '';
+    top: 7px;
+    left: -40px;
     position: absolute;
     display: block;
     border: 2px solid #f3848c;
@@ -47,6 +128,8 @@
 
   &__pagination::after {
     content: '';
+    top: 7px;
+    left: 30px;
     position: absolute;
     display: block;
     border: 2px solid #f3848c;
