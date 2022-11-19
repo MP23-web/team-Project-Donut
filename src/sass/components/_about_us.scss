@@ -51,14 +51,9 @@
    background-size: contain;
    background-position: top;
 
-   // max-width: 280px;
-   // @media screen and (min-width: $tabl) {
-   //    max-width: 336px;
-   // }
-
-   // @media screen and (min-width: $desc) {
-   //    max-width: 608px;
-   // }
+   @media screen and (max-width: $pre-tabl) {
+      max-width: 280px;
+   }
 }
 
 .about-wrapper__text, 
@@ -75,12 +70,12 @@
 }
 
 .about-wrapper__add {
-   margin-top: 15px;
-   margin-bottom: 15px;
+   margin-top: 20px;
+   margin-bottom: 20px;
 
    @media screen and (min-width: $desc) {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 22px;
+      margin-bottom: 22px;
    }
 }
 
