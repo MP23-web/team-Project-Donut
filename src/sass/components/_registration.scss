@@ -1,99 +1,240 @@
-li {
-    margin: 0;
-    padding: 0;
+.section-registration {
+  padding-top: 40px;
+  @media screen and (min-width: $tabl) {
+     padding-top: 80px;
   }
+  @media screen and (min-width: $desc) {
+     padding-top: 100px;
+  }
+}
+
+.container-registration__title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: var(--bs-dark-grey);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.21;
+  margin-bottom: 27px;
+
+ @media scren and (min-width: $tabl) {
+     font-weight: 500;
+     font-size: 32px;
+     line-height: 1.22;
+     color: var(--bg-brown);
+     margin-bottom: 28px;
+ }
+ 
+}
+.registration-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 280px;
+  height: 394px;
+  background: linear-gradient(rgba(61, 44, 44, 0.4),rgba(61, 44, 44, 0.4)), url(../img/registration-mobile/bgi.png) no-repeat center/cover;
+
+  @media screen and (min-width: $tabl) {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: baseline;
+     padding-top: 40px;
+     padding-bottom: 52px;
+     max-width: 704px;
+     height: auto;
+     background: url(../img/registration-tablet/colorful-and-tasty-donuts-tablet.png),
+       url(../img/registration-tablet/rectangle-tablet.png),
+       url(../img/registration-tablet/topping-on-strawberry-tablet.png);
+     background-size: 100px 66px, 563px 246px, 453px 246px;
+     background-repeat: no-repeat;
+     background-position: left 23px bottom 20px, left, right;
+   }
+   @media screen and (min-width: $desc) {
+     padding: 40px 0;
+     max-width: 1023px;
+     height: auto;
+     background: url(../img/registration-desk/colorful-and-tasty-donuts-desk.png),
+       url(../img/registration-desk/Rectangle-desk.png),
+       url(../img/registration-desk/topping-on-strawberry-desk.png);
+     background-size: 200px 133px, 972px 246px, 453px 246px;
+     background-repeat: no-repeat;
+     background-position: left 23px bottom 20px, left, right;
+   }
   
-  ul,
-  li {
-    list-style-type: none;
+}
+.registration-data {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  @media screen and (min-width: $tabl) {
+     margin-top: auto;
+     margin-bottom: auto;
+     margin-right: 28px;
   }
+}
+.registration-data__day {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--bs-white);
   
-  .registration__title {
-      margin-bottom: 28px;
-    display: flex;
-    justify-content: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 39px;
-    color: #2e2520;
+  @media screen and (min-width: $tabl) {
+     color: var(--bg-brown);
+     .registration-data__day--time {
+        display: block;
+     }
   }
-  .registration {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(/src/img/registration-mobile/topping-on-strawberry-donuts-mobile.jpg) no-repeat center/cover;
-    width: 1034px;
-    height: 234px;
-  }
-  .registration__input {
-    background-color: inherit;
-    border: 1px solid #2E2520;
-    
-    margin-top: 14px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-  }
-  .registration__data{
-      display: flex;
-      margin-right: 28px;
-      margin-bottom: 0;
-      margin-top: 0;
-      justify-content: end;
-      font-weight: 500;
+
+  @media screen and (min-width: $desc) {
+     font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   text-align: right;
-  
-  /* Основной текст */
-  
-  color: #3C322D;
   }
-  .registration__right {
-      position: relative;
-      display: block;
-      padding-left: 28px;
+}
+
+.registration-inform {
   
-  }
-  .registration__right::before {
+  position: relative;
+ display: flex;
+ align-items: center;
+ padding-left: 28px;
+
+  @media screen and (max-width: $pre-tabl) {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+   padding-left: 8px;
+   padding-right: 8px;
      
-       content: " ";
-      position: absolute;
-      left: 0;
-     
-      width: 1px;
-      height: 100%;
-      background: #2E2520;
-  
-  
   }
-  .registration__blank{
-      margin: 0;
-      font-weight: 500;
+}
+.registration-inform::before {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  content: " ";
+  width: 1px; 
+  height: 160px;
+  background: var(--bs-dark-grey);
+  @media screen and (max-width: $pre-tabl) {
+     height: 264px;
+     top: -65%;
+   left: 50%;
+   transform: rotate(90deg);
+   background: var(--bs-white);
+  }
+}
+.form-wrapper {
+  width: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.registration-inform__blank {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--bs-white);
+  text-align: center;
+ @media screen and (min-width: $tabl) {
+  color: var(--bs-dark-grey);
+ }
+
+ @media screen and (min-width: $desc) {
+  font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
+ }
+}
+.registration-inform__blank--last {
+  @media screen  and (max-width: $pre-tabl) {
+     text-align: center;
+     margin-bottom: 20px;
+  }
+  margin-bottom: 24px;
+}
+.registration__input {
+  background-color: inherit;
+  border: 1px solid var(--bs-white);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  &::placeholder {
+     color: var(--bs-white);
+     @media screen and (min-width: $tabl) {
+        border: 1px solid var(--bs-dark-grey);
+        color: rgba(0, 0, 0, 0.5);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+     }
+
+     @media screen and (min-width: $desc) {
+        color: var(--bs-dark-grey);
+     }
+  }
+
+  &:invalid {
+     border-color: #f44336;
+  }
+
+  &:not(:last-child) {
+     margin-bottom: 22px;
+     @media screen and (min-width: $tabl) {
+        margin-bottom: 16px;
+     } 
+  }
+}
+.registration-button {
+  margin-top: 24px;
+  @media screen and (min-width: $tabl) {
+     display: inline-block;
+     margin-left: 77px;
+     margin-top: 0;
+  }
   
-  /* Основной текст */
-  
-  color: #3C322D;
-  
+  @media screen and (min-width: $desc) {
+     margin-left: 23px;
   }
-  .form{
-      margin-top: 10px;
+}
+.registration-button__btn {
+  display: inline-block;
+  padding: 8px 0;
+  width: 145px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--bs-white);
+  background-color: var(--bs-pink);
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+
+  &:hover {
+     background-color: var(--bs-white);
+     border: 1px solid var(--bs-pink);
+     color: var(--bs-pink);
+     filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
   }
-  .registration__button{
-      display: flex;
+
+  &:focus {
+     color: var(--bs-white);
+     background-color: var(--bs-pink);
+     box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
+     filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
   }
-  .registration__btn {
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #ffffff;
-    border: none;
-    background: #f3848c;
-    border-radius: 25px;
-    width: 145px;
-    height: 40px;
-    filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
-  }
+}
