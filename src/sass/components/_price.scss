@@ -1,0 +1,142 @@
+.section-price {
+  // background: linear-gradient(
+  //   180.11deg,
+  //   #e5e2e3 10.73%,
+  //   #fdfefe 38.02%,
+  //   #e5e2e3 71.11%,
+  //   #fdfefe 99.91%
+  // );
+  padding-bottom: 40px;
+}
+
+.price-title {
+  margin-bottom: 27px;
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: var(--bs-dark-grey);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 31px;
+
+    font-weight: 500;
+    font-size: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 27px;
+  }
+}
+
+.price-card {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 32px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 17px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+
+    color: var(--bs-dark-grey);
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    width: 280px;
+    background: #fafbfb;
+    box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+    border-radius: 25px;
+    @media screen and (min-width: 768px) {
+      justify-content: space-between;
+      padding: 20px 12px 20px 10px;
+
+      width: 225px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 395px;
+      background-size: 300px;
+      padding: 28px 6px 40px 8px;
+    }
+  }
+  &__item:nth-child(2) {
+    border: 1px solid #f3848c;
+  }
+  &__bg {
+    height: 100%;
+    background-size: 240px;
+    background-image: url('../img/price/colorful-and-tasty-donuts-mobile.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+.price-list {
+  &__item {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 12px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 16px;
+    }
+  }
+  &__svg {
+    margin-right: 8px;
+    min-width: 24px;
+    min-height: 24px;
+    @media screen and (min-width: 768px) {
+      margin-right: 10px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 16px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+
+    color: var(--bs-dark-grey);
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.price-card__button {
+  margin-top: 30px;
+  width: 145px;
+  height: 40px;
+  color: #ffffff;
+  background: #f3848c;
+  border-radius: 25px;
+  border: transparent;
+  filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+}

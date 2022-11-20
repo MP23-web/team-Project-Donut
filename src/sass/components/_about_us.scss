@@ -1,4 +1,4 @@
-.section-about {
+section-about {
    background-color: rgba(229, 226, 227, 1);
    padding-top: 20px;
 
@@ -12,11 +12,6 @@
 }
 
 .container-about {
-   @media screen and (max-width: $pre-tabl) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
    @media screen and (min-width: $tabl) {
       display: flex;
    }
@@ -126,4 +121,3 @@
       display: none;
    }
 }
-
