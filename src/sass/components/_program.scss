@@ -21,55 +21,62 @@
 .container__program {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   height: auto;
+  width: 480px;
   @media screen and (min-width: $mob) {
     justify-content: center;
     flex-direction: column;
   }
   @media screen and (min-width: $tabl) {
+    width: 768px;
     flex-direction: row;
     align-items: center;
   }
-
   @media screen and (min-width: $desc) {
+    width: 1280px;
     flex-direction: row;
     align-items: baseline;
   }
 }
 
+
+
 .section-header {
-  @media screen and (min-width: $mob) {
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.2;
-    color: #3c322d;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #3C322D;
   @media screen and (min-width: $tabl) {
+    justify-content: left;
     margin-bottom: 24px;
     font-weight: 500;
     font-size: 32px;
     line-height: 1.2;
-    color: #3c322d;
+    color: #3C322D;
   }
   @media screen and (min-width: $desc) {
+    justify-content: left;
     margin-bottom: 24px;
     font-weight: 500;
     font-size: 32px;
     line-height: 1.2;
-    color: #3c322d;
+    color: #3C322D;
   }
 }
 
 .section-text {
-  @media screen and (min-width: $mob) {
-    display: flex;
-    width: 280px;
-    margin-bottom: 8px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-  }
+  display: flex;
+  max-width: 280px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
   @media screen and (min-width: $tabl) {
     display: flex;
     width: 326px;
@@ -78,7 +85,6 @@
     font-size: 16px;
     line-height: 1.25;
   }
-
   @media screen and (min-width: $desc) {
     display: flex;
     margin-bottom: 20px;
@@ -86,7 +92,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.22;
-    color: #3c322d;
+    color: #3C322D;
   }
 }
 
