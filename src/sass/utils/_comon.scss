@@ -1,24 +1,31 @@
 body {
-  font-family: 'Montserrat', sans-serif;
-  position: relative;
-  background: #bdbdbd;
-}
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    background: #E5E2E3;
+    }
+    
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 16px;
-  width: 100%;
+    .container {
+    // max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 100%;
 
-  @media screen and (min-width: $mob) {
+
+    @media screen and (min-width: $mob) {
     width: $mob;
-  }
+    padding: 0 20px;
+    }
 
-  @media screen and (min-width: $tabl) {
+    @media screen and (min-width:$tabl) {
     width: $tabl;
-  }
+    padding: 0 32px;
+    }
 
-  @media screen and (min-width: $desc) {
+    @media screen and (min-width:$desc) {
     width: $desc;
-  }
-}
+    padding: 0 16px;
+    
+    }
+    }

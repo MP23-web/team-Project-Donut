@@ -1,7 +1,27 @@
 .section-speakers {
-  background-color: #fff;
-  padding-top: 35px;
+  background-color: #f6f7f7;
+
+  @media screen and (min-width: $mob) {
+    padding-bottom: 33px; 
+  }
+  @media screen and (min-width: $tabl) {
+    padding-bottom: 77px;
+  }
+  @media screen and (min-width: $desc) {
+    padding-bottom: 101px;
+  }
 }
+
+// .section-header__speakers {
+//   margin-top: 35px;
+
+//   @media screen and (min-width: $tabl) {
+//     margin-top: 24px;
+//   }
+//   @media screen and (min-width: $desc) {
+//     margin-top: 100px;
+//   }
+// }
 
 .container__speakers {
   display: flex;
@@ -34,10 +54,71 @@
   }
 }
 
+.speaker-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .speaker {
   text-align: center;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #3c322d;
+
+  @media screen and (min-width: $tabl) {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #3c322d;
+  }
+
+  @media screen and (min-width: $desc) {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #3c322d;
+  }
 }
 
 .speaker-profession {
   text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #3c322d;
+
+  @media screen and (min-width: $tabl) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    /* Основной текст */
+
+    color: #3c322d;
+  }
+
+  @media screen and (min-width: $desc) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    /* Основной текст */
+
+    color: #3c322d;
+  }
 }
