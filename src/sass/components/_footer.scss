@@ -1,6 +1,10 @@
 .footer {
    padding-top: 28px;
    background-color: rgba(229, 226, 227, 1);
+   background-image: url(../img/footer/element-decor.png);
+   background-position: 70%;
+   background-repeat: no-repeat;
+   background-size: 70px;
 
    @media screen and (min-width: $tabl) {
       padding-bottom: 80px;      
@@ -16,21 +20,15 @@
    margin-bottom: 40px;
    margin-left: auto;
    margin-right: auto;
-   
+   @media screen and (min-width: $tabl) {
+      margin-bottom: 80px;      
+   }
 }
 
 .social-list {
    display: flex;
    .social-list__item:not(:last-child) {
       margin-right: 16px;
-   }
-
-   @media screen and (min-width: $tabl) {
-      margin-bottom: 80px;
-   }
-
-   @media screen and (min-width: $desc) {
-      margin-bottom: 100px;
    }
 }
 
