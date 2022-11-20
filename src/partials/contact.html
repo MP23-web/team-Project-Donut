@@ -1,0 +1,53 @@
+<section>
+    <div class="container">
+        <div class="contact">
+            <h2 class="contact__title">Contact</h2>
+            <p class="contact__text">We will answer any question!</p>
+            <form class="contact__form">
+                <input class="contact__input" type="email" name="mail" id="mail" required min="1" max="10"
+                    autocomplete="off" placeholder="Email"><br>
+                <input class="contact__input" type="tel" required min="1" max="10" name="question" id="question"
+                    autocomplete="off" placeholder="Type your question">
+                <div class="contact__button"><button class="contact__btn" type="submit">Send</button></div>
+            </form>
+            <ul class="contact__soc-list list">
+                <li class="contact__soc-item"><a href="" class="contact__soc-link link">
+                        <svg class="contact__soc-icon" width="16" height="16">
+                            <use href="./img/icons.svg#twitter"></use>
+                        </svg>
+                    </a></li>
+                <li class="contact__item"><a href="" class="contact__soc-link link">
+                        <svg class="contact__soc-icon" width="16" height="16">
+                            <use href="./img/icons.svg#Instagram"></use>
+                        </svg>
+                    </a></li>
+                <li class="contact__item"><a href="" class="contact__soc-link link">
+                        <svg class="contact__soc-icon" width="16" height="16">
+                            <use href="./img/icons.svg#facebook"></use>
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contacts">
+            <ul class="footer-contacts__list">
+                <li class="footer-contact__item--telephone"><a class="footer-contact__link" href="tel:(910)2228855"><svg
+                            class="
+                        footer-icon" width=" 13" height="12">
+                            <use href=" ./img/icons.svg#tel"></use>
+                        </svg>(910)222-8855
+                    </a></li>
+                <li class=" footer-contact__item--city"><a class="footer-contact__link"
+                        href="https://goo.gl/maps/5m4NGViUuSkzCe4s7"><svg class="footer-icon" width="11" height="14">
+                            <use href="./img/icons.svg#location"></use>
+                        </svg>New York</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <picture class="footer-img">
+        <source srcset="./img/footer/donuts-footer.png 1x, ./img/footer/donuts-footer2x.png 2x" type="image/png"
+            media="(max-width: 767px)">
+        <img src="./img/footer/donuts-footer.png" alt="donuts">
+    </picture>
+</section>
