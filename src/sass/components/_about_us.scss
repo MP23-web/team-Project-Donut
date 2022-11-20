@@ -12,6 +12,11 @@
 }
 
 .container-about {
+   @media screen and (max-width: $pre-tabl) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
    @media screen and (min-width: $tabl) {
       display: flex;
    }
