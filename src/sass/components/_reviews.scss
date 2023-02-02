@@ -1,140 +1,117 @@
-.section-reviews {
-  // background: linear-gradient(
-  //   180.11deg,
-  //   #e5e2e3 10.73%,
-  //   #fdfefe 38.02%,
-  //   #e5e2e3 71.11%,
-  //   #fdfefe 99.91%
-  // );
+.reviews {
+	width: 100%;
 
-  padding-bottom: 40px;
-  @media screen and (min-width: 768px) {
-    height: 720px;
-    padding-bottom: 80px;
-  }
-}
+	&__page {
+		width: 100%;
+		@media screen and (min-width: $tablet) {
+			display: flex;
+			gap: 30px;
+		}
+	}
 
-.reviews-title {
-  text-align: center;
+	&__block {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
 
-  margin-bottom: 27px;
+		@media screen and (min-width: $tablet) {
+			&:nth-child(2) {
+				margin-top: 170px;
+			}
+		}
+	}
 
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.2;
-  text-align: center;
+	&__none {
+		display: none;
 
-  color: var(--bs-dark-grey);
-  @media screen and (min-width: 768px) {
-    font-weight: 500;
-    font-size: 32px;
-  }
-}
+		@media screen and (min-width: $tablet) {
+			display: flex;
+		}
+	}
 
-.photo-list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-  }
-  &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  &__item:nth-child(even) {
-    @media screen and (min-width: 768px) {
-      position: absolute;
-      top: 80px;
-      left: 8px;
-    }
-    @media screen and (min-width: 1280px) {
-      position: absolute;
-      top: 130px;
-      left: 190px;
-    }
-  }
-  &__item:nth-child(odd) {
-    display: none;
-    @media screen and (min-width: 768px) {
-      display: flex;
-    }
-  }
-  &__picture {
-    margin-bottom: 8px;
-  }
-  &__main-img {
-    width: 280px;
-    @media screen and (min-width: 768px) {
-      width: 336px;
-    }
-    @media screen and (min-width: 1280px) {
-      width: 394px;
-    }
-  }
-  &__img {
-    width: 152px;
-    @media screen and (min-width: 1280px) {
-      width: 285px;
-    }
-  }
+	&__foto {
+		max-width: 394px;
+		max-height: 394px;
+		overflow: hidden;
+		border-radius: 50%;
+	}
 
-  &__svg {
-    margin-bottom: 8px;
-  }
+	&__foto-secondary {
+		@media screen and (min-width: $tablet) {
+			max-width: 290px;
+			max-height: 290px;
+		}
+	}
 
-  &__title {
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.4;
-    color: var(--bs-dark);
-  }
-  &__text {
-    width: 280px;
-    text-align: center;
-    margin-bottom: 32px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.2;
-    color: var(--bs-dark-grey);
-    @media screen and (min-width: 768px) {
-      width: unset;
-      margin-bottom: 22px;
-    }
-  }
-  &__row {
-    display: block;
-    text-align: center;
-  }
-  &__pagination {
-    position: relative;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
+	&__img {
+		display: block;
+		width: 100%;
+	}
 
-    text-align: center;
+	&__list {
+		display: flex;
+		justify-content: center;
+		margin-top: 8px;
+	}
 
-    color: #000000;
-  }
-  &__pagination::before {
-    content: '';
-    top: 7px;
-    left: -40px;
-    position: absolute;
-    display: block;
-    border: 2px solid #f3848c;
-    width: 35px;
-  }
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-  &__pagination::after {
-    content: '';
-    top: 7px;
-    left: 30px;
-    position: absolute;
-    display: block;
-    border: 2px solid #f3848c;
-    width: 35px;
-  }
+	&__name {
+		margin: 0;
+		margin-top: 8px;
+
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 1.22;
+	}
+
+	&__position {
+		margin-bottom: 30px;
+	}
+
+	&__reviews {
+		text-align: center;
+		padding: 0;
+		margin: 0;
+
+		font-size: 18px;
+		line-height: 1.22;
+	}
+
+	&__number {
+		display: flex;
+		width: fit-content;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 30px;
+
+		font-size: 14px;
+		line-height: 1.21;
+		color: #000000;
+
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+
+			width: 35px;
+			height: 1px;
+			background-color: $accent-color;
+		}
+
+		&::after {
+			right: -43px;
+		}
+
+		&::before {
+			left: -43px;
+		}
+	}
 }

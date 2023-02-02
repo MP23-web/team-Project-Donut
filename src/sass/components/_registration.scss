@@ -1,240 +1,246 @@
-.section-registration {
-  padding-top: 40px;
-  @media screen and (min-width: $tabl) {
-     padding-top: 80px;
-  }
-  @media screen and (min-width: $desc) {
-     padding-top: 100px;
-  }
+.registration {
+	&__tittle {
+		text-align: center;
+		margin: 0;
+		margin-bottom: 27px;
+	}
+
+	&__text {
+		text-align: center;
+		color: #f6f7f7;
+		border-bottom: 1px solid #f6f7f7;
+		margin: 0 auto;
+		padding: 40px 0 20px 0;
+		width: 100%;
+		max-width: 264px;
+		&::before {
+			@media screen and (max-width: $tablet) {
+				display: none;
+			}
+
+			@media screen and (min-width: $tablet) {
+				content: " ";
+				width: 154px;
+				height: 1px;
+				background-color: $primary-text-color;
+				position: absolute;
+				left: 55%;
+				transform: rotate(90deg);
+				bottom: 20px;
+			}
+
+			@media screen and (min-width: $desktop) {
+				width: 166px;
+				bottom: 25px;
+				left: 58%;
+			}
+		}
+
+		@media screen and (min-width: $tablet) {
+			position: absolute;
+			color: #000000;
+			z-index: 2;
+			max-width: 90px;
+			left: -190px;
+			padding: 85px 0 8px 0;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 1.22;
+			text-align: right;
+		}
+
+		@media screen and (min-width: $desktop) {
+			max-width: 127px;
+			font-size: 20px;
+			left: -368px;
+			padding-top: 99px;
+		}
+	}
+
+	&__box {
+		@media screen and (min-width: $tablet) {
+			position: relative;
+			display: flex;
+			height: 100%;
+			max-width: 704px;
+			margin: 0 auto;
+		}
+
+		@media screen and (min-width: $desktop) {
+			max-width: 1034px;
+			filter: drop-shadow(10px 15px 25px rgba(210, 201, 201, 0.45));
+		}
+	}
+
+	&__wrap {
+		position: relative;
+		display: block;
+		height: 100%;
+		width: 100%;
+		border-radius: 10px;
+		margin: 0 auto;
+
+		@media screen and (max-width: $tablet) {
+			max-width: 280px;
+			height: 394px;
+			background: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)),
+				url(../images/registration/mobile/donuts-registration-320.jpg) no-repeat center/cover, #3d2c2c;
+
+			@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+				background: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)),
+					url(../images/registration/mobile/donuts-registration-320@2x.jpg) no-repeat center/cover, #3d2c2c;
+			}
+		}
+
+		@media screen and (min-width: $tablet) {
+			position: absolute;
+			display: flex;
+			max-height: 246px;
+			max-width: 453px;
+			top: 0;
+			right: 0;
+			background: linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+				url(../images/registration/tablet/donuts-registration-768.png) no-repeat right/cover, #3d2c2c;
+
+			@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+				background: linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+					url(../images/registration/tablet/donuts-registration-768@2x.png) no-repeat right/cover, #3d2c2c, z-index 1;
+			}
+		}
+
+		@media screen and (min-width: $desktop) {
+			background: linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+				url(../images/registration/desktop/donuts-registration-1280.png) no-repeat right/cover, #3d2c2c;
+			@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+				background: linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+					url(../images/registration/desktop/donuts-registration-1280@2x.png) no-repeat right/cover, #3d2c2c;
+			}
+		}
+	}
+	&__inner {
+		@media screen and (max-width: $tablet) {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+		}
+
+		@media screen and (min-width: $tablet) {
+			z-index: 2;
+		}
+	}
+	&__img {
+		@media screen and (max-width: $tablet) {
+			display: none;
+		}
+
+		@media screen and (min-width: $tablet) {
+			bottom: 20px;
+			position: absolute;
+			left: 23px;
+			z-index: 3;
+		}
+
+		@media screen and (min-width: $desktop) {
+			bottom: 16px;
+			left: 15px;
+		}
+	}
 }
 
-.container-registration__title {
-  display: flex;
-  justify-content: center;
-  font-family: 'Montserrat Alternates', sans-serif;
-  color: var(--bs-dark-grey);
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.21;
-  margin-bottom: 27px;
+.registration .registration__pictore {
+	@media screen and (max-width: $tablet) {
+		display: none;
+	}
 
- @media scren and (min-width: $tabl) {
-     font-weight: 500;
-     font-size: 32px;
-     line-height: 1.22;
-     color: var(--bg-brown);
-     margin-bottom: 28px;
- }
- 
-}
-.registration-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 280px;
-  height: 394px;
-  background: linear-gradient(rgba(61, 44, 44, 0.4),rgba(61, 44, 44, 0.4)), url(../img/registration-mobile/bgi.png) no-repeat center/cover;
-
-  @media screen and (min-width: $tabl) {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: baseline;
-     padding-top: 40px;
-     padding-bottom: 52px;
-     max-width: 704px;
-     height: auto;
-     background: url(../img/registration-tablet/colorful-and-tasty-donuts-tablet.png),
-       url(../img/registration-tablet/rectangle-tablet.png),
-       url(../img/registration-tablet/topping-on-strawberry-tablet.png);
-     background-size: 100px 66px, 563px 246px, 453px 246px;
-     background-repeat: no-repeat;
-     background-position: left 23px bottom 20px, left, right;
-   }
-   @media screen and (min-width: $desc) {
-     padding: 40px 0;
-     max-width: 1023px;
-     height: auto;
-     background: url(../img/registration-desk/colorful-and-tasty-donuts-desk.png),
-       url(../img/registration-desk/Rectangle-desk.png),
-       url(../img/registration-desk/topping-on-strawberry-desk.png);
-     background-size: 200px 133px, 972px 246px, 453px 246px;
-     background-repeat: no-repeat;
-     background-position: left 23px bottom 20px, left, right;
-   }
-  
-}
-.registration-data {
-  margin-top: 40px;
-  text-align: center;
-  margin-bottom: 40px;
-  @media screen and (min-width: $tabl) {
-     margin-top: auto;
-     margin-bottom: auto;
-     margin-right: 28px;
-  }
-}
-.registration-data__day {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  color: var(--bs-white);
-  
-  @media screen and (min-width: $tabl) {
-     color: var(--bg-brown);
-     .registration-data__day--time {
-        display: block;
-     }
-  }
-
-  @media screen and (min-width: $desc) {
-     font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: right;
-  }
+	@media screen and (min-width: $tablet) {
+		display: block;
+		z-index: 2;
+	}
 }
 
-.registration-inform {
-  
-  position: relative;
- display: flex;
- align-items: center;
- padding-left: 28px;
-
-  @media screen and (max-width: $pre-tabl) {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     width: 100%;
-   padding-left: 8px;
-   padding-right: 8px;
-     
-  }
-}
-.registration-inform::before {
-  position: absolute;
-  left: 0;
-  top: 5%;
-  content: " ";
-  width: 1px; 
-  height: 160px;
-  background: var(--bs-dark-grey);
-  @media screen and (max-width: $pre-tabl) {
-     height: 264px;
-     top: -65%;
-   left: 50%;
-   transform: rotate(90deg);
-   background: var(--bs-white);
-  }
-}
-.form-wrapper {
-  width: 100%;
-}
 .form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.registration-inform__blank {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: var(--bs-white);
-  text-align: center;
- @media screen and (min-width: $tabl) {
-  color: var(--bs-dark-grey);
- }
+	@media screen and (max-width: $tablet) {
+		padding: 0 8px;
+		z-index: 2;
+	}
 
- @media screen and (min-width: $desc) {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
- }
-}
-.registration-inform__blank--last {
-  @media screen  and (max-width: $pre-tabl) {
-     text-align: center;
-     margin-bottom: 20px;
-  }
-  margin-bottom: 24px;
-}
-.registration__input {
-  background-color: inherit;
-  border: 1px solid var(--bs-white);
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  font-family: inherit;
-  font-size: 16px;
-  outline: none;
-  &::placeholder {
-     color: var(--bs-white);
-     @media screen and (min-width: $tabl) {
-        border: 1px solid var(--bs-dark-grey);
-        color: rgba(0, 0, 0, 0.5);
-        border-top: none;
-        border-left: none;
-        border-right: none;
-     }
+	@media screen and (min-width: $tablet) {
+		position: absolute;
+		left: -43px;
+	}
 
-     @media screen and (min-width: $desc) {
-        color: var(--bs-dark-grey);
-     }
-  }
+	@media screen and (min-width: $desktop) {
+		left: -185;
+	}
 
-  &:invalid {
-     border-color: #f44336;
-  }
+	&__text {
+		margin: 0;
+		margin-top: 20px;
+		text-align: center;
+		color: $primary-white;
 
-  &:not(:last-child) {
-     margin-bottom: 22px;
-     @media screen and (min-width: $tabl) {
-        margin-bottom: 16px;
-     } 
-  }
-}
-.registration-button {
-  margin-top: 24px;
-  @media screen and (min-width: $tabl) {
-     display: inline-block;
-     margin-left: 77px;
-     margin-top: 0;
-  }
-  
-  @media screen and (min-width: $desc) {
-     margin-left: 23px;
-  }
-}
-.registration-button__btn {
-  display: inline-block;
-  padding: 8px 0;
-  width: 145px;
-  height: 40px;
-  font-size: 18px;
-  line-height: 1.22;
-  color: var(--bs-white);
-  background-color: var(--bs-pink);
-  border: none;
-  outline: none;
-  border-radius: 25px;
-  cursor: pointer;
-  filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+		@media screen and (min-width: $tablet) {
+			text-align: left;
+			color: #000000;
+			margin-top: 40px;
+			margin-bottom: 16px;
+			font-size: 16px;
+			line-height: 1.25;
+		}
 
-  &:hover {
-     background-color: var(--bs-white);
-     border: 1px solid var(--bs-pink);
-     color: var(--bs-pink);
-     filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
-  }
+		@media screen and (min-width: $desktop) {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 1.2;
+			margin-bottom: 24px;
+		}
+	}
 
-  &:focus {
-     color: var(--bs-white);
-     background-color: var(--bs-pink);
-     box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
-     filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
-  }
+	&__btn {
+		display: block;
+		margin: auto;
+		margin-top: 32px;
+
+		@media screen and (min-width: $tablet) {
+			position: absolute;
+			margin: 0;
+			top: 103px;
+			right: -220px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			right: -160px;
+		}
+	}
+	&__input {
+		width: 100%;
+		margin-top: 20px;
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid $primary-white;
+		font-size: 16px;
+		line-height: 1.25;
+		color: $primary-white;
+		&::placeholder {
+			font-size: 16px;
+			line-height: 1.25;
+			color: $primary-white;
+
+			@media screen and (min-width: $tablet) {
+				color: rgba(0, 0, 0, 0.5);
+			}
+		}
+
+		@media screen and (min-width: $tablet) {
+			color: #000000;
+			border-bottom: 1px solid #000000;
+			margin-top: 16px;
+			width: 237px;
+			display: flex;
+		}
+
+		@media screen and (min-width: $desktop) {
+			width: 212px;
+		}
+	}
 }

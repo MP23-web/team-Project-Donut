@@ -1,39 +1,43 @@
-<header >
-  <div class="container wrapper">
-    <section class="header">
-      <picture class="header__picture">
-        <source
-          class="header__logo"
-          srcset="./img/logo/logo-desk.png 1x, ./img/logo/logo-desk2x.png 2x"
-          type="image/png"
-          media="(min-width: 1280px)"
-        />
-        <source
-          class="header__logo"
-          srcset="
-            ./img/logo/logo-tablet.png   1x,
-            ./img/logo/logo-tablet2x.png 2x
-          "
-          type="image/png"
-          media="(min-width: 768px)"
-        />
-        <source
-          class="header__logo"
-          srcset="
-            ./img/logo/logo-mobile.png   1x,
-            ./img/logo/logo-mobile2x.png 2x
-          "
-          type="image/png"
-          media="(max-width: 767px)"
-        />
+<div class="wrapper">
+  <div class="container">
+    <header class="header">
+      <a href="./index.html" class="header__picture">
+        <picture>
+          <source
+            class="header__logo"
+            srcset="
+              ./images/logo/logo-1200.png    1x,
+              ./images/logo/logo-1200@2x.png 2x
+            "
+            type="image/png"
+            media="(min-width: 1200px)"
+          />
+          <source
+            class="header__logo"
+            srcset="
+              ./images/logo/logo-768.png    1x,
+              ./images/logo/logo-768@2x.png 2x
+            "
+            type="image/png"
+            media="(min-width: 768px)"
+          />
+          <source
+            class="header__logo"
+            srcset="
+              ./images/logo/logo-480.png    1x,
+              ./images/logo/logo-480@2x.png 2x
+            "
+            type="image/png"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="header__logo"
+            src="./images/logo/logo-480.png"
+            alt="logo"
+          />
+        </picture>
+      </a>
 
-        <img
-          class="header__logo"
-          src="./img/logo/logo-mobile.png"
-          alt="logo"
-          width="106"
-        />
-      </picture>
       <button
         class="menu-button"
         type="button"
@@ -41,100 +45,109 @@
         aria-controls="menu-container"
         data-menu-button=""
       >
-        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-          <use
-            class="icon-menu js-open-menu"
-            href="./img/icons.svg#menu-burger"
-            width="30"
-            height="16"
-          ></use>
-          <use
-            class="icon-close js-close-menu"
-            href="./img/icons.svg#close"
-            width="32"
-            height="32"
-          ></use>
+        <svg class="icon-menu" width="40" height="40">
+          <use href="./images/icon.svg#menu"></use>
+        </svg>
+        <svg class="icon-close" width="40" height="40">
+          <use href="./images/icon.svg#cros"></use>
         </svg>
       </button>
-      <div class="menu-container js-menu-container" id="menu-container" data-menu="">
-        <ul class="menu-container__list">
+
+      <div class="menu-container" id="menu-container" data-menu="">
+        <ul class="menu-container__list list">
           <li class="menu-container__item">
-            <a class="menu-container__link" href="#">About us</a>
+            <a href="#" class="menu-container__link list">About us</a>
           </li>
           <li class="menu-container__item">
-            <a class="menu-container__link" href="#">Program</a>
+            <a class="menu-container__link list" href="#">Program</a>
           </li>
           <li class="menu-container__item">
-            <a class="menu-container__link" href="#">Speakers</a>
+            <a class="menu-container__link list" href="#">Speaker</a>
           </li>
           <li class="menu-container__item">
-            <a class="menu-container__link" href="#">Price</a>
+            <a class="menu-container__link list" href="#">Price</a>
           </li>
           <li class="menu-container__item">
-            <a class="menu-container__link" href="#">Reviews</a>
+            <a class="menu-container__link list" href="#">Reviws</a>
           </li>
           <li class="menu-container__item">
-            <a class="menu-container__link" href="#">Contact</a>
+            <a class="menu-container__link list" href="#">Contact</a>
           </li>
         </ul>
       </div>
+
       <nav class="main-nav">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--first" href="#"
+            <a href="#" class="main-nav__link main-nav__link--first list"
               >About us</a
             >
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Program</a>
+            <a class="main-nav__link list" href="#">Program</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Speaker</a>
+            <a class="main-nav__link list" href="#">Speakers</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Price</a>
+            <a class="main-nav__link list" href="#">Price</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Reviws</a>
+            <a class="main-nav__link list" href="#">Reviews</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--first" href="#"
+            <a class="main-nav__link main-nav__link--last list" href="#"
               >Contacts</a
             >
           </li>
         </ul>
       </nav>
-    </section>
-    <section class="section-hero">
-      <div class="section-hero__container">
-        <h1 class="section-hero__title">Donut Masterclass with the Donut King</h1>
-        <h3 class="section-hero__text">Hosted by Eva Green</h3>
-        <button class="section-hero__link button list" type="button">Register</button>
+    </header>
+    <section class="section-heroe">
+      <div class="section-heroe__container">
+        <h1 class="section-heroe__title">
+          Donut Masterclass with the Donut King
+        </h1>
+        <h2 class="section-heroe__text">Hosted by Eva Green</h2>
+        <a
+          data-modal-open
+          class="section-heroe__link button list"
+          href="#registration"
+          >Register</a
+        >
       </div>
-      
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://twitter.com/" target="_blank">
-            <svg class="social-list__icon" width="16" height="16">
-              <use href="./img/icons.svg#twitter"></use>
+
+      <ul class="social list">
+        <li class="social__list">
+          <a class="social-links" href="https://twitter.com/" target="_blank">
+            <svg class="social__icon" width="20" height="20">
+              <use href="./images/icon.svg#twitter"></use>
             </svg>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://www.instagram.com/" target="_blank">
-            <svg class="social-list__icon" width="16" height="16">
-              <use href="./img/icons.svg#Instagram"></use>
+        <li class="social__list">
+          <a
+            class="social-links"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <svg class="social__icon" width="20" height="20">
+              <use href="./images/icon.svg#instagram"></use>
             </svg>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://www.facebook.com/" target="_blank">
-            <svg class="social-list__icon" width="16" height="16">
-              <use href="./img/icons.svg#facebook"></use>
+        <li class="social__list">
+          <a
+            class="social-links"
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
+            <svg class="social__icon" width="20" height="20">
+              <use href="./images/icon.svg#facebook"></use>
             </svg>
           </a>
         </li>
       </ul>
     </section>
   </div>
-</header>
+</div>

@@ -1,56 +1,100 @@
-<section class="section section-registration">
-    <div class="container container-registration">
-      <h2 class="container-registration__title">Registration</h2>
-      <div class="registration-wrapper">
-        <div class="registration-data">
-          <p class="registration-data__day">
-            May 23, <span class="registration-data__day--time">11:00</span>
-          </p>
-          <p class="registration-data__day">New York</p>
+<section id="registration" class="section">
+  <div class="container">
+    <div class="registration">
+      <h2 class="registration__tittle tittle">Registration</h2>
+      <div class="registration__box">
+        <div class="registration__pictore">
+          <div class="registration__pic">
+            <picture>
+              <source
+                srcset="
+                  ./images/registration/desktop/white-background-1280.png    1x,
+                  ./images/registration/desktop/white-background-1280@2x.png 2x
+                "
+                media="(min-width:1200px)"
+              />
+
+              <source
+                srcset="
+                  ./images/registration/tablet/white-background-768.png    1x,
+                  ./images/registration/tablet/white-background-768@2x.png 2x
+                "
+                media="(min-width:768px)"
+              />
+
+              <img
+                src="./images/registration/tablet/white-background-768.png"
+                alt=""
+              />
+            </picture>
+          </div>
         </div>
-        <div class="registration-inform">
-          <div class="form-wrapper">
+        <div class="registration__wrap">
+          <div class="registration__inner">
+            <p class="registration__text text">May 23, 11:00 <br />New York</p>
             <form class="form">
-              <p class="registration-inform__blank">Apply your personal info</p>
-              <p
-                class="registration-inform__blank registration-inform__blank--last"
-              >
+              <p class="form__text text">
+                Apply your personal info <br />
                 for registration
               </p>
-  
+              <label class="form__label" for="mena"></label>
               <input
-                class="registration__input"
+                class="form__input"
                 type="text"
                 name="name"
-                autocomplete="off"
+                id="mena"
                 placeholder="Your name"
-                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-                title="Username must be two words separated by space."
+                required
               />
+
+              <label class="form__label" for="tel"></label>
               <input
-                class="registration__input"
+                class="form__input"
                 type="tel"
                 name="tel"
-                autocomplete="off"
+                id="tel"
                 placeholder="Phone number"
+                required
               />
+
+              <label class="form__label" for="mail"></label>
               <input
-                class="registration__input"
+                class="form__input"
                 type="email"
-                name="mail"
-                autocomplete="off"
+                name="email"
+                id="mail"
                 placeholder="Email"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}"
+                required
               />
+              <button class="form__btn button" type="submit">Register</button>
             </form>
           </div>
-          <div class="registration-button">
-            <button class="registration-button__btn" type="submit">
-              Register
-            </button>
-          </div>
+        </div>
+        <div class="registration__img">
+          <picture>
+            <source
+              srcset="
+                ./images/registration/desktop/colorful-donuts-1280.png    1x,
+                ./images/registration/desktop/colorful-donuts-1280@2x.png 2x
+              "
+              media="(min-width:1200px)"
+            />
+
+            <source
+              srcset="
+                ./images/registration/tablet/colorful-donuts-768.png    1x,
+                ./images/registration/tablet/colorful-donuts-768@2x.png 2x
+              "
+              media="(min-width:768px)"
+            />
+
+            <img
+              src="./images/registration/tablet/colorful-donuts-768.png"
+              alt="donut"
+            />
+          </picture>
         </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>

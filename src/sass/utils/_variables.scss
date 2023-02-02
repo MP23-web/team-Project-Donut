@@ -1,16 +1,11 @@
-:root {
-    --bs-pink:#F3848C;
-    --bs-brown:#3C322D;
-    --bs-dark:#000000;
-    --bs-dark-grey:#2E2520;
-    --bs-white:#FFFFFF;
-    --bs-yellow:#EDD501;
-    --bs-silver:#C4C4C4;
-    --bs-grey:#545454;
-    --bs-light-pink:#D68362;
-    }
+$mobile: 479.97px;
+$tablet: 767.98px;
+$desktop: 1199.97px;
 
-    
-    
-  
-    
+$primary-text-color: #2e2520;
+$title-text-color: #3c322d;
+$accent-color: #f3848c;
+$icon-color: #3c322d;
+$primary-white: #f6f7f7;
+
+$timing: cubic-bezier(0.4, 0, 0.2, 1);
